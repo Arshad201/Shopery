@@ -1,0 +1,151 @@
+/* .dashboard{
+    border: 1px solid red;
+} */
+
+.profile-billing-wrapper{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-box{
+    flex: 1;
+    border: 1px solid var(--Gray1);
+    border-radius: 0.6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.profile-img-box{
+    width: 150px;
+    height: 150px;
+}
+.profile-img-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25rem;
+}
+.profile-box .xl-fontsize{
+    color: var(--Gray9);
+}
+
+.profile-box .s-fontsize{
+    color: var(--Gray5);
+}
+
+.profile-box .m-fontsize{
+    color: var(--Primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.billing-add-box{
+    flex: 0.7;
+    border: 1px solid var(--Gray1);
+    border-radius: 0.6rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.billing-add-box :nth-child(1){
+    text-transform: uppercase;
+    color: var(--Gray4);
+    margin-bottom: 0.5rem;
+}
+
+.billing-add-box :nth-child(2){
+    color: var(--Gray9);
+}
+
+.billing-add-box :nth-child(3){
+    color: var(--Gray6);
+}
+
+.billing-add-box :nth-child(7){
+    color: var(--Gray9);
+}
+
+.billing-add-box :nth-child(8){
+    color: var(--Gray9);
+}
+
+.billing-add-box :last-child{
+    color: var(--Primary);
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.orders-table{
+    /* margin-top: 2rem; */
+    padding: 2rem 0rem;
+    border: 1px solid var(--Gray1);
+    border-radius: 0.6rem;
+  
+}
+
+.orders-table div{
+    padding: 0rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orders-table div .m-fontsize{
+    color: var(--Primary);
+    text-decoration: none;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    border-spacing: 0px;
+}
+
+thead{
+    background-color: var(--Gray05);
+    color: var(--Gray7);
+}
+
+tbody{
+    color: var(--Gray8);
+}
+
+th, td {
+    padding: 1.5rem;
+}
+
+th{
+    white-space: nowrap;
+}
+
+tbody tr :last-child{
+    text-decoration: none;
+    color: var(--Primary);
+}
+
+.orders-table > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-billing-wrapper{
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 478px) {
+    .orders-table{
+        width: 90vw;
+        overflow: scroll;
+    }
+}

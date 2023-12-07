@@ -1,0 +1,48 @@
+.trust-by-number{
+    background: var(--black) url('../../assets/images/bgImg3.png') no-repeat center/100%;
+    padding: 4.3rem 2rem;
+}
+
+.numbers{
+    width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.num-box{
+    flex: 1;
+    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    padding: 3rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.num-box span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.7rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  padding-bottom: 1.5rem;
+  color: var(--Primary);
+}
+
+.num-box .l-fontsize{
+    white-space: nowrap;
+    color: var(--Gray05);
+}
+
+@media only screen and (max-width: 1150px) {
+    .trust-by-number{
+        background: black;
+
+    }
+
+    .numbers{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,37 @@
+.page-header{
+    padding: 4rem 0rem;
+    background: url('../../assets/images/breadcrumbs.png') no-repeat center/cover;
+}
+
+.page-header > div{
+    width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.page-header > div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.page-header .homeIcon:hover{
+    filter: brightness(0) saturate(100%) invert(45%) sepia(76%) saturate(2668%) hue-rotate(93deg) brightness(97%) contrast(103%);
+}
+
+.page-header .m-fontsize{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.page-header .m-fontsize:hover, .activeCrumbs{
+    color: var(--Primary);
+    transition: .2s ease-in-out;
+}
+
+.inActiveCrumbs{
+    color: var(--Gray4);
+}

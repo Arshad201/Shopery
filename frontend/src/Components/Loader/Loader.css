@@ -1,0 +1,30 @@
+.loader{
+    height: 42vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader > div{
+    height: 10rem;
+    width: 10rem;
+    border: 0.5rem solid var(--Primary);
+    border-radius: 20rem;
+    position: relative;
+    animation: loading 800ms linear infinite;
+}
+
+.loader > div div{
+    height: 4rem;
+    width: 10rem;
+    background-color: var(--white);
+    position: absolute;
+    top: -15%;
+    left: -5%;
+}
+
+@keyframes loading {
+    to {
+        transform: rotateZ(-360deg);
+      }
+    }

@@ -1,0 +1,55 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.pagination .btn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--Gray6);
+    border: none;
+    cursor: pointer;
+}
+
+.pagination .activePagination{
+    background-color: var(--Primary);
+    color: var(--white);
+}
+
+
+.pagination .stepsbtn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--Gray6);
+    border: 1px solid var(--Gray1);
+    cursor: pointer;
+}
+
+.pagination .stepsbtn img{
+    filter: brightness(0) saturate(100%) invert(9%) sepia(1%) saturate(546%) hue-rotate(314deg) brightness(107%) contrast(100%);
+}
+
+.pagination .disableBtn{
+    background-color: var(--Gray05);
+    cursor:not-allowed;
+}
+
+.pagination .disableBtn img{
+    filter: brightness(0) saturate(100%) invert(79%) sepia(14%) saturate(10%) hue-rotate(2deg) brightness(91%) contrast(85%);
+}
+
+

@@ -1,0 +1,231 @@
+.quick-view-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.modal{
+    width: 60%;
+    position: relative;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.closeModal{
+    position: absolute;
+    right: 0%;
+    top: -3rem;
+    cursor: pointer;
+}
+
+.modal form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal form input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0.01em;
+    color: var(--Gray9);
+    padding: 1.2rem 2rem;
+    border: 1px solid var(--Gray1);
+    border-radius: 10rem 0rem 0rem 10rem;
+    outline: none;
+    width: 10%;
+    flex: 1;
+}
+
+.modal form .btn{
+    margin-left: -10%;
+}
+
+/* Alert Modal */
+.alert-modal{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 100;
+}
+
+.alert-modal-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.7rem 2rem ;
+    border-radius: 0.2rem;
+    margin-bottom: 5rem;
+}
+
+
+/* For Success  */
+.alert-modal.success .alert-modal-box{
+    background-color: var(--white);
+    border: 2px solid var(--Primary);
+}
+
+.alert-modal.success .s-fontsize{
+    color: var(--Hard_Primary);
+}
+
+/* For Error  */
+.alert-modal.error .alert-modal-box{
+    background-color: var(--white);
+    border: 2px solid var(--Danger);
+}
+
+.alert-modal.error .s-fontsize{
+    color: var(--Gray9);
+}
+
+.alertImg{
+    width: 30px;
+}
+
+/* Question Modal  */
+.question-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-modal .modal-box{
+    /* width: 50%; */
+    padding: 2rem 5rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 12rem rgba(0, 0, 0, 0.4);
+    
+}
+
+.question-modal .modal-box div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.question-modal .btn{
+    padding: 1rem 3rem;
+}
+
+.question-modal .noBtn{
+    background-color: var(--white);
+    border-color: var(--Danger);
+    color: var(--Danger);
+}
+.question-modal .noBtn:hover{
+    background-color: var(--Danger);
+    color: var(--white);
+}
+
+form.comment-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+form.comment-form .btn{
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+
+form.comment-form textarea{
+    width: 100%;
+    background-color: var(--white);
+    outline: none;
+    padding: 1.5rem;
+    border: 1px solid var(--Gray1);
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    letter-spacing: 0.01em;
+    color: var(--Gray9);
+    resize: none;
+}
+
+.star-container{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.star-container img{
+    width: 3rem;
+    cursor: pointer;
+}
+
+
+.unfilledStar{
+    filter: brightness(0) saturate(100%) invert(61%) sepia(9%) saturate(11%) hue-rotate(325deg) brightness(99%) contrast(92%);
+}
+
+
+/* Avatar Upload Modal */
+.avatarUploadContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cropper-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    overflow: hidden;
+    height: 300px;
+}
+
+
+.cropper{
+    border: 1px solid blue;
+    flex: 1.5;
+}
+
+.cropper-output{
+    border: 1px solid black;
+    flex: 1;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1280px) {
+    .modal{
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .modal{
+        width: 95%;
+    }
+}
+

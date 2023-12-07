@@ -1,0 +1,234 @@
+.product-info{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.product-content{
+    flex: 1;
+}
+
+.product-content .header > :first-child{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-content .header .heading3{
+    color: var(--Gray9);
+}
+
+.product-content .badge{
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.product-content .badge.fw-400{
+    background-color: #20b5253b;
+    color: var(--Hard_Primary);
+}
+
+.product-content .badge.fw-500{
+    background-color: #ea4b4827;
+    color: var(--Danger);
+    border-radius: 10rem;
+}
+
+.product-info .rating-SKU{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.product-info .review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.product-info .review img{
+    width: 1.4rem;
+}
+
+.product-info .rating-SKU span{
+    color: var(--Gray6);
+}
+
+.product-info .rating-SKU .badge.fw-400{
+    color: var(--Gray8);
+}
+
+.product-info .prices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-info .prices .l-fontsize{
+    color: var(--Gray3);
+    text-decoration: line-through;
+}
+
+.product-info .prices .xl-fontsize{
+    color: var(--Hard_Primary);
+}
+
+
+/* Quick View Product Content's Body */
+
+.product-info .body-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--Gray1);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.product-info .brand-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-info .brand-img-box{
+    border: 1px solid var(--Gray1);
+    padding: 0.9rem 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.product-info .body-top .t-fontsize{
+    color: var(--Gray9);
+}
+
+.social-share-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.social-icon-box{
+    border-radius: 20rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-box img{
+    width: 1.4rem;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(6%) saturate(5%) hue-rotate(315deg) brightness(89%) contrast(80%);
+}
+
+.social-icon-box:hover{
+    background-color: var(--Primary);
+    transition: .2s ease-in-out;
+}
+
+.social-icon-box:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(95%) saturate(20%) hue-rotate(325deg) brightness(104%) contrast(106%);
+}
+
+.body-middle.t-fontsize{
+    color: var(--Gray5);
+    padding: 2rem 0rem;
+    border-bottom: 1px solid var(--Gray1);
+}
+
+.product-info .body-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid var(--Gray1);
+}
+
+.product-info button{
+    cursor: pointer;
+}
+
+.product-info .quantity-btn-container{
+    border: 1px solid var(--Gray1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 10rem;
+}
+
+.product-info .quantity-btn-container button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20rem;
+    border: none;
+    background-color: var(--Gray05);
+}
+
+.product-info .add-to-cart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    border-radius: 22rem;
+    border: none;
+    flex: 1;
+    background-color: var(--Primary);
+    color: var(--white);
+}
+
+
+.product-info .add-to-cart-btn img{
+    width: 2rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(270deg) brightness(104%) contrast(102%);
+}
+
+.product-info .add-to-wishlist{
+    border-radius: 20rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: var(--Gray05);
+}
+
+.product-info .add-to-wishlist img{
+    width: 1.7rem;
+}
+
+.product-info .footer{
+    margin: 2rem 0rem 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-info .footer .fw-500{
+    color: var(--Gray9);
+}
+
+.product-info .footer .fw-400{
+    color: var(--Gray5);
+}
+
+@media only screen and (max-width: 1024px) {
+    .product-info{
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+    .product-content{
+        flex: 1;
+    }
+}

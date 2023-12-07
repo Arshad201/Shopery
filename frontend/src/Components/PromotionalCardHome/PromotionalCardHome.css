@@ -1,0 +1,131 @@
+.promotional-cards-home{
+    padding: 5rem 0rem;
+}
+
+.promotional-cards-home .wrapper{
+    width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.promotional-cards-home .card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 4.8rem 4rem;
+    border-radius: 0.7rem;
+}
+
+.promotional-cards-home .card > span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--Gray05);
+}
+
+.promotional-cards-home .card .heading4{
+    color: var(--Gray05);
+}
+.promotional-cards-home .badge-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0rem 2rem 0rem;
+}
+.promotional-cards-home .badge-container .s-fontsize{
+    color: var(--Gray3);
+}
+
+.promotional-cards-home .badge-container .badge{
+    background-color: var(--Warning);
+    color: var(--Gray05);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.promotional-cards-home .wrapper > :first-child{
+        background: url('../../assets/images/home-card-bg1.png') no-repeat center/cover;
+    }
+.promotional-cards-home .wrapper > :last-child{
+        background: url('../../assets/images/home-card-bg2.png') no-repeat center/cover;
+        
+}
+
+.timer-container{
+    display: flex;
+    padding: 1rem 0rem;
+    gap: 1rem;
+}
+
+.timer-container > span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--Gray2);
+    
+}
+
+.timer-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timer-box :first-child{
+    color: var(--Gray05);
+}
+
+.timer-box :last-child{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--Gray2);
+}
+
+.promotional-cards-home .wrapper > :last-child .btn{
+    background-color: var(--Gray05);
+    border-color: var(--Gray05);
+    color: var(--Gray9);
+    margin-top: 1rem;
+}
+
+.promotional-cards-home .wrapper > :last-child .btn img{
+    filter: brightness(0) saturate(100%)
+}
+
+.promotional-cards-home .wrapper > :last-child .btn:hover{
+    background-color: transparent;
+    color: var(--Gray05);
+}
+
+.promotional-cards-home .wrapper > :last-child .btn:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(9%) saturate(2707%) hue-rotate(174deg) brightness(115%) contrast(107%);
+}
+
+@media only screen and (max-width: 1024px) {
+    .promotional-cards-home .wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .promotional-cards-home .wrapper{
+        flex-direction: column;
+    }
+}
+
+
+

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* 
+
+font-family: 'Poppins', sans-serif;
+
+*/
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root{
+  --black: rgb(0, 0, 0);
+  --white: white;
+  --Soft_Primary: #84D187;
+  --Primary: #00B207;
+  --Hard_Primary: #2C742F;
+  --Warning: #FF8A00;
+  --Danger: #EA4B48;
+
+  /* Pure Gray Shades */
+  --Gray9: #191919;
+  --Gray8: #333333;
+  --Gray7: #4c4c4c;
+  --Gray6: #666666;
+  --Gray5: #808080;
+  --Gray4: #999999;
+  --Gray3: #b3b3b3;
+  --Gray2: #cccccc;
+  --Gray1: #e6e6e6;
+  --Gray05: #f2f2f2;
+
+  /* Greenish Gray Shades */
+  --GGray9: #002603;
+  --GGray8: #173b1a;
+  --GGray7: #2b572e;
+  --GGray6: #406b42;
+  --GGray5: #406b42;
+  --GGray4: #406b42;
+  --GGray3: #96b297;
+  --GGray2: #b4ccb4;
+  --GGray1: #dae5da;
+  --GGray05: #edf2ee;
+  
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--white);
+}
+
+/* Heading Sizes */
+.display1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+}
+
+.heading3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+  color: var(--Gray9);
+}
+
+.heading4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+  color: var(--Gray9);
+}
+
+.heading5{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+  color: var(--Gray9);
+}
+
+/* XXL font size */
+.xxl-fontsize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+}
+
+/* XL font size */
+.xl-fontsize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+}
+
+/* Large font size */
+.l-fontsize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  letter-spacing: 0.01em;
+}
+
+/* Medium font size */
+.m-fontsize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+}
+
+/* Small font size */
+.s-fontsize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+  letter-spacing: 0.01em;
+}
+
+/* Tiny font size */
+.t-fontsize{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  letter-spacing: 0.01em;
+}
+
+
+.fw-300{
+  font-weight: 300;
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+
+
+/* Button */
+
+.btn{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--Primary);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.4rem 3.4rem;
+  border-radius: 30rem;
+  border: 2px solid var(--Primary);
+  cursor: pointer;
+  white-space: nowrap;
+ }
+
+ .btn:hover{
+  background-color: var(--white);
+  color: var(--Primary);
+  transition: .2s ease-in-out;
+ }
+
+ .btn:hover img{
+  filter: brightness(0) saturate(100%) invert(35%) sepia(84%) saturate(1700%) hue-rotate(106deg) brightness(99%) contrast(112%);
+ }
+
+ /* Button Loader  */
+ .btn .lodingIcon{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(0%) hue-rotate(302deg) brightness(106%) contrast(105%);
+  width: 2rem;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  to {
+      transform: rotateZ(-360deg);
+    }
+  }
+
+ .p-not-found{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+ 
+@media only screen and (max-width: 1920px) {
+  html{
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  html{
+    font-size: 87%;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  html{
+    font-size: 81%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  html{
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  html{
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .display1{
+    font-size: 5rem;
+  }
+}
+

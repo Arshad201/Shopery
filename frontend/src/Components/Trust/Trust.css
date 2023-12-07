@@ -1,0 +1,110 @@
+.trust-container{
+    padding: 7rem 0rem;
+}
+
+.trust-container .wrapper{
+    width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.trust-container .images{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 57%;
+    position: relative;
+}
+
+.images > :first-child{
+    width: 38%;
+}
+
+.images > :nth-child(2){
+    width: 62%;
+}
+
+.trust-container .content{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.trust-container .content .heading3{
+    color: var(--Gray9);
+    padding-right: 12vw;
+}
+
+.trust-container .list{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.trust-container .list .l-fontsize{
+    color: var(--Gray9);
+    padding-bottom: 1rem;
+}
+
+.trust-container .list .s-fontsize{
+    color: var(--Gray5);
+}
+
+.long-leaf{
+    position: absolute;
+    left: 20%;
+    top: -13%;
+    width: 8rem;
+    z-index: -1;
+}
+
+.heart-shape-leaf{
+    position: absolute;
+    bottom: 3%;
+    left: -7%;
+    width: 8rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    .trust-container .content .heading3{
+        padding-right: 6vw;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .trust-container .wrapper{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .trust-container .wrapper{
+        width: 80%;
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .trust-container .images{
+        width: 100%;
+    }
+
+    .trust-container .content{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .trust-container .wrapper{
+        width: 85%;
+    }
+}
+
+

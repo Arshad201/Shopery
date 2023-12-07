@@ -1,0 +1,85 @@
+.product-card-sm{
+    border: 1px solid var(--Gray1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.7rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.product-card-sm > img{
+    width: 40%;
+}
+
+.product-card-sm .product-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-card-sm .product-meta .name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    color: var(--Gray7);
+}
+
+.product-card-sm .product-meta .price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    color: var(--Gray9);
+}
+
+.product-card-sm .product-meta .ratings img{
+    width: 1.4rem;
+}
+
+.product-card-sm:hover{
+    border-color: var(--Hard_Primary);
+    box-shadow: 1px 1px 10px #2c742e7a;
+}
+
+.product-card-sm:hover .ratings, .product-card-sm:hover .price{
+    display: none;
+}
+
+.product-card-sm .icons-on-hover{
+    position: relative;
+    flex-direction: row;
+    gap: 0.3rem;
+    display: none;
+    margin-top: 0.2rem;
+}
+
+.product-card-sm .icons-on-hover button{
+    width: 3rem;
+    height: 3rem;
+}
+
+.product-card-sm .icons-on-hover button:hover{
+    background-color: var(--Primary);
+    transition: .3s ease-in-out;
+}
+
+.product-card-sm .icons-on-hover button:hover img{
+    filter: brightness(0) saturate(100%) invert(95%) sepia(0%) saturate(4687%) hue-rotate(157deg) brightness(107%) contrast(95%);
+}
+
+.product-card-sm .icons-on-hover button img{
+    width: 1.5rem;
+}
+
+.product-card-sm .icons-on-hover :first-child img{
+    filter: brightness(0) saturate(100%)
+}
+
+.product-card-sm:hover .icons-on-hover{
+    display: flex;
+}

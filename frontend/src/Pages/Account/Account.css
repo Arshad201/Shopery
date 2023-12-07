@@ -1,0 +1,96 @@
+.account{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.sidebar{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border: 1px solid var(--Gray1);
+    border-radius: 0.6rem;
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.account .sidebar h3{
+    padding: 2rem;
+}
+
+.account .sidebar .link{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--Gray6);
+    padding: 1.5rem 2rem;
+    border-left: 0.3rem solid transparent;
+    cursor: pointer;
+}
+
+.account .sidebar .link span{
+    white-space: nowrap;
+}
+
+.account .sidebar .link.active, .account .sidebar .link:hover{
+    border-color: var(--Primary);
+    background-color: var(--Gray05);
+    color: var(--Gray9);
+    transition: .2s ease-in-out;
+}
+
+.account .sidebar .link.active img, .account .sidebar .link:hover img{
+    filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(3646%) hue-rotate(353deg) brightness(108%) contrast(80%);
+}
+
+.account .sidebar img{
+    filter: brightness(0) saturate(100%) invert(94%) sepia(10%) saturate(0%) hue-rotate(163deg) brightness(89%) contrast(84%);
+}
+
+.account .main{
+    flex: 2;
+}
+.notFoundTxt{
+    color: var(--white);
+    background-color: var(--Danger);
+}
+
+@media only screen and (max-width: 1200px) {
+    .account{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 832px) {
+    .account .sidebar h3{
+        display: none;
+    }
+
+     .sidebar{
+        flex: 0;
+    }
+
+    .account .sidebar .link span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .account{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0rem;
+    }
+
+    .account .sidebar .link{
+        border-left: none;
+        border-bottom: 2px solid transparent;
+    }
+}

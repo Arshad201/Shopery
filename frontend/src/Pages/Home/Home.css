@@ -1,0 +1,94 @@
+.product-sale-card-home .wrapper{
+    width: 80%;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.3fr;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.product-card-vContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.hot-sale-card{
+    background: url('../../assets/images/bgImg4.png') no-repeat center/cover;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    min-height: 400px;
+    
+}
+
+.hot-sale-card > span{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--Gray9);
+}
+
+.hot-sale-card .heading5{
+    padding: 1rem 0rem 1.5rem 0rem;
+}
+
+.hot-sale-card .btn{
+    padding: 1.2rem 2.5rem;
+    background-color: var(--white);
+    color: var(--Primary);
+    font-weight: 400;
+    border-color: var(--white);
+}
+
+.hot-sale-card .btn:hover{
+    border-color: var(--Gray9);
+    color: var(--Gray9);
+}
+
+.hot-sale-card .btn:hover img{
+    filter: brightness(0) saturate(100%) invert(12%) sepia(10%) saturate(33%) hue-rotate(343deg) brightness(97%) contrast(105%);
+}
+
+
+.hot-sale-card .btn img{
+    filter: brightness(0) saturate(100%) invert(39%) sepia(99%) saturate(990%) hue-rotate(92deg) brightness(95%) contrast(105%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .product-sale-card-home .wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .product-sale-card-home .wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-sale-card-home .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .product-sale-card-home .wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .hot-sale-card{
+        height: 500px;
+    }
+}
+
+
+

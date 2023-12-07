@@ -1,0 +1,140 @@
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.setting{
+    border: 1px solid var(--Gray1);
+    border-radius: 0.6rem;
+}
+
+.setting h3{
+    padding: 2rem;
+    border-bottom: 1px solid var(--Gray1);
+}
+
+.users-info-img-edit-wraper{
+    display: flex;
+    padding: 2rem;
+}
+
+.user-info-edit-wrapper{
+    flex: 1;
+}
+.user-img-update-wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.user-img-update-wrapper div{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50rem;
+}
+
+.user-img-update-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+}
+
+.user-img-update-wrapper .btn{
+    background-color: var(--white);
+    color: var(--Primary);
+    padding: 1.3rem 2.5rem;
+}
+
+.user-img-update-wrapper .btn:hover{
+    background-color: var(--Primary);
+    color: var(--white);
+    transition: .2s ease-in-out;
+}
+
+.setting-form-wrapper{
+    padding: 2rem;
+}
+
+
+.setting form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-row .input-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label{
+    color: var(--Gray9);
+}
+
+.form-row .input-group input, .form-row .input-group select, .form-row .input-group textarea{
+    width: 100%;
+    background-color: var(--white);
+    outline: none;
+    padding: 1.5rem;
+    border: 1px solid var(--Gray1);
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    letter-spacing: 0.01em;
+    color: var(--Gray9);
+    resize: none;
+}
+
+.form-row .input-group select{
+    color: var(--Gray5);
+}
+
+.form-row .input-group input::placeholder{
+    color: var(--Gray5);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 1024px) {
+    .form-row{
+        flex-wrap: wrap;
+    }
+
+    .form-row > :first-child, .form-row > :nth-child(2){
+        flex: 1;
+    }
+
+    .form-row > :last-child{
+        flex: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .users-info-img-edit-wraper{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+}

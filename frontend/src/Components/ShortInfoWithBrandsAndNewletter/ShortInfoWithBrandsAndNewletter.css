@@ -1,0 +1,126 @@
+.short-info-brand-newsletter{
+    padding: 7rem 0rem 5rem 0rem;
+}
+
+.short-info-brand-newsletter .wrapper{
+    width: 80%;
+    margin: 0rem auto;
+}
+
+.short-info-brand-newsletter .brand-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+}
+
+.short-info-brand-newsletter .vertial-line{
+    border-left: 1px solid var(--Gray1);
+    height: 2.3rem;
+}
+
+.short-info-brand-newsletter .brand-img-container img{
+    height: 2.5rem;
+}
+
+.short-info-brand-newsletter .info-newletter-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.info-newletter-container > :first-child{
+    flex: 1;    
+}
+.info-newletter-container > :nth-child(2){
+    flex: 1;    
+}
+.info-newletter-container > :last-child{
+    flex: 1.9;    
+}
+.short-info-brand-newsletter .box{
+    border: 1px solid var(--GGray1);
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+}
+
+.short-info-brand-newsletter .box > :first-child{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../assets/icons/iconBg1.svg') no-repeat center/cover;
+}
+
+
+.short-info-brand-newsletter .m-fontsize{
+    margin: 1.5rem 0rem 1rem 0rem;
+    color: var(--Gray9);
+    white-space: nowrap;
+}
+
+.short-info-brand-newsletter .s-fontsize{
+    color: var(--Gray6);
+}
+
+.short-info-brand-newsletter .contact-number{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 0.01em;
+  color: var(--Primary);
+  white-space: nowrap;
+}
+
+.short-info-brand-newsletter form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.short-info-brand-newsletter form input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0.01em;
+    color: var(--Gray9);
+    padding: 1rem 2rem;
+    border: 1px solid var(--Gray1);
+    border-radius: 10rem 0rem 0rem 10rem;
+    outline: none;
+    width: 10%;
+    flex: 1;
+}
+
+.short-info-brand-newsletter .btn{
+    flex: 0.5;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    margin-left: -5rem;
+}
+
+.short-info-brand-newsletter .btn:hover{
+    background-color: var(--white);
+}
+
+.short-info-brand-newsletter .brand-img-container img:hover{
+    filter: brightness(0) saturate(100%) invert(45%) sepia(36%) saturate(6053%) hue-rotate(100deg) brightness(101%) contrast(103%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .short-info-brand-newsletter .wrapper{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .short-info-brand-newsletter .brand-img-container{
+        justify-content: center;
+    }
+}
